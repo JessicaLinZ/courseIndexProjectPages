@@ -1,0 +1,214 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 4000px;
+  margin: 0;
+}
+
+.navBar {
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 67px;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 0px 8px rgb(180 180 180);
+}
+
+.navLink {
+  float: left;
+  position:relative;
+  padding: 22px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 168);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.35s;
+  /* min-height: 67px; */
+}
+
+.dropDown {
+  /* height: 67px;
+  padding: 22px; */
+  float: left;
+  max-width: 212px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 168);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.35s;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+.dropButton {
+  height: 67px;
+  padding: 22px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  color: rgb(0, 0, 168);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.35s;
+  border: none;
+  outline: none;
+  background-color: white;
+  max-width: 212px;
+}
+
+.navLink:hover, .dropDown:hover .dropButton {
+  color: white;
+  background-color: darkturquoise;
+}
+
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 161, 182);
+  /* min-width: 160px; */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 210px;
+  overflow: hidden;
+  
+}
+
+#dropDisc {
+  width: 204px;
+}
+
+.dropContent a{
+  float: left;
+  color: white;
+  padding: 12px 22px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.dropContent a:hover {
+  background-color: rgb(0, 140, 165);
+}
+
+.dropDown:hover .dropContent{
+  display:block;
+}
+
+.containerTop {
+    width: 100%;
+    position: relative;
+    top: 60px;
+    background-image: url(../images/assignment2Header.png);
+    background-blend-mode: multiply;
+    min-height: 520px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    box-shadow: inset 1px -6px 20px -12px rgb(128, 128, 145);
+    transition: box-shadow .3s ease-in-out;
+  }
+
+.containerTop:hover {
+  box-shadow: inset 0px 550px 0 0 rgb(0, 0, 168, 0.5);
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: white;
+  text-shadow: 0px 2px 10px rgb(60 60 60);
+  /* transition: box-shadow .3s ease-in-out; */
+}
+
+.subheading {
+  position: absolute;
+  top: 72%;
+  left: 15%;
+  width: 21%;
+  padding-top: 9px;
+  padding-bottom: 7px;
+  padding-left: 164px;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 4px;
+  color: white;
+  background-color: darkturquoise;
+}
+
+.containerBody {
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+img {
+    width: 380px;
+    height: 380px;
+    /* padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    margin-right: 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    float: left;
+    filter: hue-rotate(0deg);
+    transition: filter .3s ease-in-out;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+img:hover {
+    filter: hue-rotate(15deg);
+    opacity: 0.65;
+}
+
+.imgWhite {
+    filter: brightness(1);
+    transition: filter .3s ease-in-out;
+}
+
+.imgWhite:hover {
+    filter: brightness(0.9);
+}
+
+h1 {
+    color: rgb(0, 0, 168);
+    font-family: "proxima-nova", sans-serif;
+    line-height: 40px;
+}
+
+p {
+  font-family: "proxima-nova", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#clickOn {
+    padding-bottom: 25px;
+}
